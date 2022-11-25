@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+	</title>
+
+	<style type="text/css">
+
+		@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+		@import url(https://fonts.googleapis.com/css?family=Ranchers);
+
+		body {
+			background-color: mintcream;
+			padding: 50px;
+		}
+
+		.tabs {
+			display: flex;
+			flex-wrap: wrap;
+			font-family: 'Ranchers';
+			#max-width: 600px;
+			height: 100%;
+			padding: 10px 30px; #top-bottom, right-left
+		}
+
+		.tabs_radio {
+			display: none; #hide radio button
+		}
+
+		.tab_label {
+			color: darkgreen;
+			font-size: 40px;
+			cursor: pointer;
+			padding: 20px;	
+		}
+
+		.slam_content {
+			background-color: lightgray;
+			font-family: 'Lato';
+			order: 1;
+			width: 100%;
+			margin: 50px 100px 50px 100px; #top-right-bottom-left
+			padding: 50px 100px; 
+			display: none;
+		}
+
+		.tabs_radio:checked+.tab_label {
+			color: mediumvioletred;
+			border-bottom : 2px solid darkgreen;
+		} 
+
+		.tabs_radio:checked+.tab_label+.slam_content {
+			display: initial;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="tabs">
+		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab1" checked>
+		<label for=tab1 class="tab_label">PROLOGUE</label>
+		<div class="slam_content">
+			Home <br>
+			Lorem ipsum
+		</div>
+
+		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab2">
+		<label for=tab2 class="tab_label">EPISODES</label>
+		<div class="slam_content">
+			Tab2 Content
+		</div>
+
+		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab3">
+		<label for=tab3 class="tab_label">EPILOGUE</label>
+		<div class="slam_content">
+			Tab3 Content
+		</div>
+
+	</div>
+	
+</body>
+</html>

@@ -12,7 +12,7 @@
 		@import url(https://fonts.googleapis.com/css?family=Ranchers);
 
 		body {
-			background-color: mintcream;
+			background-image: url(bg.png);
 			padding: 50px;
 		}
 
@@ -20,64 +20,241 @@
 			display: flex;
 			flex-wrap: wrap;
 			font-family: 'Ranchers';
-			#max-width: 600px;
 			height: 100%;
-			padding: 10px 30px; #top-bottom, right-left
 		}
 
 		.tabs_radio {
-			display: none; #hide radio button
+			display: none; /* hide radio button */
 		}
 
 		.tab_label {
-			color: darkgreen;
+			width: 26%;
+			color: #969200;
 			font-size: 40px;
 			cursor: pointer;
-			padding: 20px;	
+			padding: 10px;	
+			-webkit-text-stroke-width: 2px;
+  			-webkit-text-stroke-color: black;
 		}
 
 		.slam_content {
-			background-color: lightgray;
+			background-color: #F2D8B3;
 			font-family: 'Lato';
 			order: 1;
 			width: 100%;
-			margin: 50px 100px 50px 100px; #top-right-bottom-left
-			padding: 50px 100px; 
+			margin: 50px 100px;/*top-right-bottom-left */
+			padding: 50px 80px; 
 			display: none;
 		}
 
+
 		.tabs_radio:checked+.tab_label {
-			color: mediumvioletred;
-			border-bottom : 2px solid darkgreen;
+			color: #992800;
+			border-bottom : 5px solid #969200;
 		} 
 
 		.tabs_radio:checked+.tab_label+.slam_content {
 			display: initial;
 		}
+
+		#selfieP {
+			margin-top: 40px;
+			margin-right: 10px;
+			border: 5px solid #992800;
+		}
 		
+		h1 {
+			background: #969200;
+		}
+
+		#introTab {
+			margin-top: 40px;
+			width: 58%;
+			text-align: center;
+			float: right;
+		}
+
+		table, th, td {
+			border: 5px solid #992800;
+			border-collapse: collapse;
+			font-size: 15px;
+		} 
+
+		#gifLeft {
+			float: left;
+			height: 300px;
+			width: 320px;
+			padding: 0px;
+			border: 5px solid #969200;
+		}
+
+		#gifRight {
+			float: right;
+			height: 300px;
+			width: 320px;
+			padding: 0px;
+			border: 5px solid #969200;
+		}
+
+		#episodesPR {
+			float: right;
+			font-size: 18px;
+			width: 400px;
+			padding: 0px 10px 10px 20px;
+			text-align: right;
+		}
+
+		#episodesPL {
+			float: left;
+			font-size: 18px;
+			width: 400px;
+			padding: 0px 20px 10px 10px;
+			text-align: left;
+		}
+
+		#endB {
+			font-size: 25px;
+			color: whitesmoke;
+			background-color: #992800;
+		}
 	</style>
 </head>
 <body>
 	<div class="tabs">
-		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab1" checked>
-		<label for=tab1 class="tab_label">PROLOGUE</label>
-		<div class="slam_content">
-			Home <br>
-			Lorem ipsum
-		</div>
+			<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab1"checked>
+			<label for=tab1 class="tab_label">PROLOGUE</label>
 
-		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab2">
-		<label for=tab2 class="tab_label">EPISODES</label>
-		<div class="slam_content">
-			Tab2 Content
-		</div>
+			<div class="slam_content">
+				<img src="2.png" width="700" height="400" style="margin-left: 100px;" />
 
-		<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab3">
-		<label for=tab3 class="tab_label">EPILOGUE</label>
-		<div class="slam_content">
-			Tab3 Content
-		</div>
+				<h1>&nbsp</h1>
 
+				<img id="selfieP" src="mee.png" width="300" height="400" align="left" alt="my pic"/>
+
+				<table id="introTab">
+
+	  				<colgroup>
+	  				<col span="2" style="background-color: #FFCC5C">
+	  				<tr><th>Birthday:</th><td>January 08, 2002</td></tr>
+	  				<tr><th>Age:</th><td>20 years old</td></tr>
+	  				<tr><th>Hometown:</th><td>Marikina City</td></tr>
+	  				<tr><th>Course:</th><td>Bachelor of Science in Computer Engineering</td></tr>
+					<tr><th>Pets:</th><td>3 cats and 1 dog</td></tr>
+					<tr><th>Hobbies:</th><td> 📼 Watch series and movies (western, korean) <br> 📼 Read novels, mangas. (currently reading murakami novels & spyxfamily manga) <br> 📼  I think scrolling through tiktok is a hobby now... <br> 📼  I enjoy exploring different crafts (making beads accessories-- mask holder, bracelet and necklace) <br> 📼 I love exploring indie artists and bands.. but i also listen to kpop since grade 5 ^^ <br> 📼 I also enjoy taking long warm baths :") <br> 📼 Cooking ! (but is actually a household chores now) </td></tr>
+					<tr><th>Favorite Artists:</th><td>Reese Lansangan <br> Clara Benin <br> Munimuni <br> Over October <br> IV of Spades <br> Lola Amour <br> Any Name's Okay <br> Ourselves the Elves <br> DPR, The Black Skirts <br> New West </td></tr>
+					</colgroup>
+				</table>
+			</div>
+
+			<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab2">
+			<label for=tab2 class="tab_label">EPISODES</label>
+
+			<div class="slam_content">
+
+				<div>
+					<img id ="gifLeft" src="clueless.gif" alt="cluelessgif" style="margin-top:30px;" /> <br>
+				</div>
+
+				<div class="episodesD">
+
+					<p id="episodesPR"> <br>So OK, you're probably thinking, "Is this, like
+					a Noxema commercial, or what?!" But seriously, I actually have a way normal life for a teenage girl. I mean I get up, I brush my teeth, and I pick out my school clothes... <br><br>
+					Joke! This is not the clueless movie. <br><br><br>
+
+					Hi! I'm Ann Vergie Adecer and this is my slambook. :D <br><br></p>
+
+				</div>
+
+
+				<div class="episodesD">
+
+					<p id="episodesPL"><br>Ever since my younger years, I already have a soft spot for animals. I want to be a veterinary doctor just so I can be near to them and i also like to live in the country side. I do not like the busy street and pollution in Manila. So, my goal up to Senior High is to enroll to Veterinary Medicine. But since I failed to be a student in UPLB, I opted to enroll in PUP, that's why I'm taking the Bachelor of Science in Computer Engineering today. Weird, right? I did not imagine myself working in the IT industry but here I am.. : ) <br></p>
+				</div>
+
+				<div> 
+					<img id="gifRight" src="vet.gif" alt="vetgif"/>
+				</div>
+
+				<div>
+					<img id ="gifLeft" src="pets.gif" alt="petgif"/>
+				</div>
+
+				<div class="episodesP">
+
+					<p id="episodesPR"> I have 3 cats and 1 dog, I actually dislike cats during my younger days but now, I can't resist to cuddle them. I have a 8-years-old chowchow whose named is saichi. She had gone through a major surgery this year because of her condition-- pyometra. Her uterus were filled with infection and pus and can ruptured anytime soon. Since we stopped breeding after her first dog birth, her hormones are also imbalanced thus, exposing her to bacterial infection in her reproductive parts. Luckily, saichi survived in the operation and is very healthy today!  < 3 </p>
+
+				</div>
+
+				<div class="episodesP">
+
+					<p id="episodesPL"> I also like travelling to places, meeting up with friends, and hanging out with myself. < 3 I think it's important to have a silent time with yourself even if you are not doing anything. I am prone to burnouts and breakdowns, so I always remind myself to be soft with myself especially in academics.  <br><br>
+
+					Lastly, I super super super love, need, want and will forever drink a coffee. As Lorelai Gilmore says,<br><br><br>
+
+					“If it was physically possible to make love to a hot beverage, this would be the one." </p>
+				</div>
+
+				<div>
+					<img id ="gifRight" src="lorelai.gif" alt="lorelaigif"/>
+				</div>
+
+			</div>
+
+			<input type="radio" class ="tabs_radio" name="slam_tabs" id="tab3">
+			<label for=tab3 class="tab_label">EPILOGUE</label>
+
+			<div class="slam_content" style="text-align: center;">
+
+				<b id="endB">
+
+				<i> &nbsp Main Character &nbsp
+
+					<div>
+						<img src="main.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Director &nbsp <br>
+
+					<div>
+						<img src="director.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Director of Photography &nbsp <br>
+
+					<div>
+						<img src="camera.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Music Director &nbsp <br>
+
+					<div>
+						<img src="music.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Writer &nbsp<br>
+
+					<div>
+						<img src="writer.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Set Decorator &nbsp <br>
+
+					<div>
+						<img src="designer.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div><br><br>
+
+				&nbsp Costume Designer &nbsp<br>
+
+					<div>
+						<img src="costume.jpg" alt="maincharac" width="600px" style="padding: 30px;">
+					</div>
+
+				</i>
+				</b>
+
+				<img src="end.png" width="700" height="400">
+			
+			</div>
 	</div>
 	
 </body>
